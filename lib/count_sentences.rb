@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.count(".?!")
+    self.match(/\w[.?!]/).size
   end
 end
